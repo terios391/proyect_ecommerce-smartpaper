@@ -1,7 +1,7 @@
 // 1. LA FUNCIÓN PARA INYECTAR HTML (Debe ir suelta, afuera de todo)
 function cargarComponente(id, archivo) {
     // Retornamos el fetch para saber cuándo terminó de cargar
-    return fetch(archivo)
+return fetch(archivo) 
         .then(res => {
             // CORRECCIÓN: Comillas invertidas (backticks) para la variable
             if (!res.ok) throw new Error(`Error al cargar ${archivo}`);
