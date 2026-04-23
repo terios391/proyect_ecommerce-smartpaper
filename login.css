@@ -1,0 +1,117 @@
+.bg_login {
+    background-color: #f4f7f6; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    font-family: 'Montserrat', sans-serif;
+}
+.login_container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1); 
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.login_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.LOGO {
+    width: 50px; 
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1));
+}
+
+.login_header h1 {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 35px;
+    color: #11357c; 
+}
+
+.login_container h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+}
+
+.input_group label {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+
+.input_group input {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+.input_group input:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.3);
+}
+.btn_login {
+    background-color: #00b386; 
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn_login:hover {
+    background-color: dodgerblue; 
+}
+.login_links {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.login_links a {
+    color: dodgerblue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login_links a:hover {
+    text-decoration: underline;
+}
+
+.login_links p {
+    margin-top: 15px;
+    color: #666;
+}
+
+.btn_regresar {
+    color: #888 !important; 
+    font-weight: normal !important;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 15px;
+}

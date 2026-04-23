@@ -1,0 +1,20 @@
+/* tipo de letra*/
+@font-face {
+    font-family: 'Grand Hotel';
+    src: url('assets/fonts/GrandHotel-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-Regular.otf') format('truetype');
+}
+/* reseteo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*aplicacion de estilo al body*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fcfcfc;
+}

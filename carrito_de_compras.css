@@ -1,0 +1,58 @@
+.h1{
+    font-family: 'Grand Hotel',serif;
+    width: 40px;
+}
+.container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carrito_vacio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.carrito{
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+    max-width: 1200px;
+    margin: 60px auto; 
+    padding: 0 20px;
+}
+.carrito_imagen{
+    width: 100%; 
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    gap: 25px;
+}
+.carrito_imagen img{
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+.seguir_comprando{
+    background-color: #00b386;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    transition: 0.3s;
+    display: inline-block;
+}
+.seguir_comprando:hover{
+    background-color: dodgerblue;
+}

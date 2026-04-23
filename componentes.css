@@ -1,0 +1,241 @@
+/*ENCABEZADO Y MENU*/
+.header{
+    background-color: dodgerblue;
+    padding: 15px 30px;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.LOGO{
+    width: 70px;
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1));
+}
+.logo_container h1{
+    font-family: 'Grand Hotel', cursive;
+    font-size: 35px;
+    color: black;
+    margin: 0;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.menu li a :hover{
+    color: white;
+}
+/*MENU DESPLEGABLE*/
+.menu_desplegable {
+    position: relative;
+}
+.sub_menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 10px 0;
+    z-index: 100;
+    list-style: none;
+}
+.menu_desplegable:hover .sub_menu{
+    display: block;
+}
+.sub_menu li a{
+    color: #333;
+    padding: 12px 20px;
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    transition: background 0.3s;
+}
+.sub_menu li a:hover {
+    background-color: #f4f7f6;
+    color: dodgerblue;
+}
+/* ICONOS DERECHA Y BOTON */
+.acciones_derecha {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.icono_accion{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1));
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.icono_accion:hover{
+    transform: scale(1.1);
+}
+.cta{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-color: darkcyan;
+    color: aquamarine;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.cta:hover{
+    color: white;
+}
+/*BADGE DEL CARRITO (CONTADOR ROJO)*/
+.carrito_contenedor{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.badge_carrito{
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background-color: #e3001b;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    display: none;
+    z-index: 10;
+}
+/*buscador*/
+.search_container {
+    display: flex;
+    justify-content: center;
+    margin: top 15px;
+}
+.search_input{
+    padding: 10px 15px;
+    width: 350px;
+    border: 2px solid #e0e0e0;
+    border-right: none;
+    outline: none;
+    border-radius: 20px 0 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.search_btn {
+    padding: 0px 20px;
+    background-color: #00b386;
+    color: white;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_btn:hover {
+    background-color: #008060;
+}
+.icono_lupa {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    display: block;
+}
+/*PIE DE PAGINA*/
+.footer {
+    background-color: dodgerblue; 
+    color: white;
+    padding: 50px 20px;
+}
+.footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+.footer_col h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.mt-20 {
+    margin-top: 30px; 
+}
+.footer_col p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.footer_col ul {
+    list-style: none;
+}
+.footer_col ul li {
+    margin-bottom: 12px;
+}
+.footer_col ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.footer_col ul li a:hover {
+    color: aquamarine; 
+    text-decoration: underline;
+}
+.newsletter_box {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 3px;
+    max-width: 280px;
+}
+.newsletter_box input {
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.newsletter_box button {
+    background-color: #008060; 
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.newsletter_box button:hover {
+    background-color: dodgerblue;
+}
+.newsletter_box button img {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1); 
+}

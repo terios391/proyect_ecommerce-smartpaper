@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - SmartPaper</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="bg_login">
+
+    <div class="login_container">
+        <div class="login_header">
+            <img class="LOGO" src="assets/icons/icono4.png" alt="SmartPaper">
+            <h1>SmartPaper</h1>
+        </div>
+
+        <h2>Iniciar Sesión</h2>
+
+        <form class="login_form" action="login.php" method="POST">
+            <div class="input_group">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+            </div>
+            
+            <div class="input_group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="********" required>
+            </div>
+
+            <button type="submit" class="btn_login">Ingresar</button>
+        </form>
+
+        <div class="login_links">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <p>¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+            <br>
+            <a href="index.html" class="btn_regresar">← Regresar a la tienda</a>
+        </div>
+    </div>
+
+</body>
+</html>
